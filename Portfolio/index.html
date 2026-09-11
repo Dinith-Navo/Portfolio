@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinith Navodya | Intern Project Manager</title>
+  <meta name="description" content="Personal Portfolio of Dinith Navodya — Intern Project Manager at Sri Lanka Insurance Corporation specializing in Agile project coordination, Jira, ClickUp, and software delivery.">
+  <meta name="keywords" content="Dinith Navodya, Intern Project Manager, Agile, Scrum, Jira, ClickUp, Sri Lanka Insurance, Portfolio">
+  <meta name="author" content="Dinith Navodya">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Dinith Navodya | Intern Project Manager">
+  <meta property="og:description" content="Final-year IT undergraduate & Intern PM with 6 months of IT industry experience in Agile project planning, Jira/ClickUp tracking, and cross-functional coordination.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23183a37'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='42' fill='%232dd4bf'>DN</text></svg>">
+
+  <!-- JSON-LD Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dinith Navodya",
+    "jobTitle": "Intern Project Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Sri Lanka Insurance Corporation (Life)"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Sri Lanka Institute of Information Technology (SLIIT)"
+    },
+    "email": "dinithnavodya12@gmail.com",
+    "telephone": "+94711609534",
+    "sameAs": [
+      "https://www.linkedin.com/in/dinith-navo/",
+      "https://github.com/Dinith-Navo"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Scroll Reading Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Ambient Glow & Interactive Particle Canvas Background -->
+  <div class="ambient-background" aria-hidden="true">
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="DN">
+        <span class="logo-badge">DN</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#references" class="nav-link">References</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Utilities: Theme Switch & Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode" title="Toggle theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+
+        <!-- Sound FX Toggle Button -->
+        <button id="sound-toggle" class="theme-toggle-btn sound-toggle-btn" aria-label="Toggle audio effects" title="Toggle Sound Feedback">
+          <i class="fa-solid fa-volume-xmark sound-off-icon"></i>
+          <i class="fa-solid fa-volume-high sound-on-icon" style="display:none; color: var(--primary);"></i>
+        </button>
+
+        <!-- Quick CV Modal Trigger & Direct Download -->
+        <button id="nav-cv-btn" class="btn btn-sm btn-outline nav-cv-trigger" aria-label="Preview CV">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>View CV</span>
+        </button>
+        <a href="assets/resume.pdf" download="Dinith_Navodya_Resume.pdf" class="btn btn-sm btn-primary nav-download-btn" aria-label="Download Resume PDF" title="Download Official Resume PDF">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>CV</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for Project Management Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Dinith Navodya</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="subtitle-label">Role:</span>
+            <span class="hero-role-text">Intern Project Manager</span>
+          </div>
+
+          <p class="hero-tagline">
+            Bridging technical software engineering with rigorous Agile delivery. Experienced in Jira & ClickUp task tracking, cross-functional stakeholder alignment, and data-driven project reporting.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="assets/resume.pdf" download="Dinith_Navodya_Resume.pdf" class="btn btn-secondary" id="hero-download-cv" title="Download Dinith Navodya Resume PDF">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download CV</span>
+            </a>
+            <button id="hero-preview-cv" class="btn btn-glass" aria-label="Preview Resume PDF">
+              <i class="fa-regular fa-file-lines"></i>
+              <span>Preview CV</span>
+            </button>
+            <a href="#projects" class="btn btn-glass">
+              <i class="fa-solid fa-cubes"></i>
+              <span>Projects</span>
+            </a>
+          </div>
+
+          <!-- Quick Social & Contact Bar -->
+          <div class="hero-social-links">
+            <span class="social-label">Connect:</span>
+            <a href="https://www.linkedin.com/in/dinith-navo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:dinithnavodya12@gmail.com" class="social-icon" aria-label="Send Email" title="Email Dinith">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+94711609534" class="social-icon" aria-label="Call Phone" title="Phone: +94 71 160 9534">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Media Column / Portrait -->
+        <div class="hero-visual">
+          <div class="portrait-card-wrapper">
+            <!-- Floating Badge 1: SLIC Internship -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon insurance-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Intern PM</span>
+                <span class="badge-sub">Sri Lanka Insurance</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Agile Certified -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon agile-icon">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="badge-info">
+                <span class="badge-title">Agile & Scrum</span>
+                <span class="badge-sub">Certified Professional</span>
+              </div>
+            </div>
+
+            <!-- Profile Photo Container -->
+            <div class="portrait-frame">
+              <div class="portrait-border-glow"></div>
+              <img src="assets/images/profile.jpg" alt="Dinith Navodya - Intern Project Manager" class="portrait-img" width="460" height="460" loading="eager">
+              <div class="portrait-overlay-glow"></div>
+            </div>
+
+            <!-- Mini Tech/Tool pill list floating at bottom -->
+            <div class="floating-tool-row">
+              <span class="tool-tag"><i class="fa-brands fa-jira"></i> Jira</span>
+              <span class="tool-tag"><i class="fa-solid fa-check-double"></i> ClickUp</span>
+              <span class="tool-tag"><i class="fa-solid fa-file-excel"></i> MS Excel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="container hero-metrics-container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="6">0</span>+</div>
+            <div class="metric-desc">Months PM Industry Experience</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="4">0</span>+</div>
+            <div class="metric-desc">Academic Software Projects</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="100">0</span>%</div>
+            <div class="metric-desc">Agile & Sprint Governance</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number"><span class="counter" data-target="2">0</span></div>
+            <div class="metric-desc">Fluent Languages (EN / SI)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT / PROFILE SECTION -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-regular fa-user"></i> Profile Summary</span>
+          <h2 class="section-title">About <span class="gradient-text">Dinith Navodya</span></h2>
+          <p class="section-subtitle">A synergy of analytical project governance and hands-on IT engineering.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Profile Description -->
+          <div class="about-main-card">
+            <div class="card-glow"></div>
+            <div class="about-lead-quote">
+              <i class="fa-solid fa-quote-left quote-icon"></i>
+              <p class="lead-text">
+                Motivated and detail-oriented final-year undergraduate with <strong>6 months of experience as a Project Management Intern in the IT industry</strong>. Experienced in supporting project planning, coordinating cross-functional teams, tracking project progress, and facilitating stakeholder communication in Agile environments.
+              </p>
+            </div>
+
+            <p class="about-secondary-text">
+              Proficient in industry-standard project management tools such as <strong>Jira, ClickUp, and Microsoft Excel</strong>. A quick learner with strong organizational, analytical, and problem-solving skills, seeking to contribute to successful project delivery while continuously growing as an impactful project management professional.
+            </p>
+
+            <!-- Value Pillars -->
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                  <h4 class="pillar-title">Project Planning & Tracking</h4>
+                  <p class="pillar-text">Milestone structuring, WBS, sprint backlogs, and risk registers.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <div>
+                  <h4 class="pillar-title">Cross-Functional Synergy</h4>
+                  <p class="pillar-text">Liaising between business stakeholders, QA, and technical software developers.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-file-signature"></i></div>
+                <div>
+                  <h4 class="pillar-title">Reporting & Governance</h4>
+                  <p class="pillar-text">MoMs, burndown charts, stakeholder status decks, and audit-ready records.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+                <div>
+                  <h4 class="pillar-title">Technical Literacy</h4>
+                  <p class="pillar-text">Solid IT foundation enables clear communication with engineering teams without friction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info & Languages Sidebar -->
+          <div class="about-sidebar">
+            <!-- Snapshot Details Card -->
+            <div class="info-card">
+              <h3 class="card-heading"><i class="fa-solid fa-id-card-clip"></i> Snapshot</h3>
+              <ul class="info-list">
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-briefcase"></i> Current Role:</span>
+                  <span class="info-val">Intern Project Manager</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-building"></i> Company:</span>
+                  <span class="info-val">Sri Lanka Insurance (Life)</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                  <span class="info-val">BSc (Hons) in IT @ SLIIT</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                  <span class="info-val">Colombo, Sri Lanka</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                  <span class="info-val copyable" data-copy="dinithnavodya12@gmail.com" title="Click to copy email">dinithnavodya12@gmail.com</span>
+                </li>
+                <li>
+                  <span class="info-label"><i class="fa-solid fa-phone"></i> Phone:</span>
+                  <span class="info-val copyable" data-copy="+94711609534" title="Click to copy phone">+94 71 160 9534</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Languages Card -->
+            <div class="info-card languages-card">
+              <h3 class="card-heading"><i class="fa-solid fa-language"></i> Language Fluency</h3>
+              <div class="language-bars">
+                <div class="lang-item">
+                  <div class="lang-meta">
+                    <span class="lang-name">English</span>
+                    <span class="lang-level">Fluent (Professional Working)</span>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 95%;"></div>
+                  </div>
+                </div>
+                <div class="lang-item">
+                  <div class="lang-meta">
+                    <span class="lang-name">Sinhala</span>
+                    <span class="lang-level">Native / Fluent</span>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-fill" style="width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EXPERIENCE SECTION -->
+    <section class="experience-section section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-briefcase"></i> Work Experience</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">Real-world impact delivering enterprise project management in the life insurance sector.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item: Sri Lanka Insurance Corporation -->
+          <div class="timeline-card-wrapper active-role">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div class="role-meta">
+                  <span class="role-badge">Current Role</span>
+                  <h3 class="timeline-role">Intern Project Manager</h3>
+                  <div class="timeline-company">
+                    <i class="fa-solid fa-building-shield"></i>
+                    <strong>Sri Lanka Insurance Corporation (Life)</strong>
+                  </div>
+                </div>
+                <div class="timeline-period">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>March 2026 – Present</span>
+                  <span class="timeline-duration">6+ Months</span>
+                </div>
+              </div>
+
+              <p class="timeline-summary">
+                Serving as an integral member of the project management office (PMO), directly supporting project managers and enterprise IT initiatives through comprehensive Agile coordination, milestone tracking, and stakeholder communication.
+              </p>
+
+              <!-- Key Responsibilities List -->
+              <h4 class="duties-title"><i class="fa-solid fa-list-check"></i> Core Contributions & Deliverables:</h4>
+              <ul class="timeline-bullets">
+                <li>
+                  <i class="fa-solid fa-circle-check bullet-icon"></i>
+                  <span><strong>Project Planning & Delivery:</strong> Assisted in end-to-end project planning, cross-functional coordination, and proactive monitoring to support timely project delivery.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check bullet-icon"></i>
+                  <span><strong>Agile Tool Governance:</strong> Managed project backlogs, tasks, sprints, timelines, and status updates using <strong>ClickUp and Jira</strong>.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check bullet-icon"></i>
+                  <span><strong>Reporting & Analytics:</strong> Prepared executive-ready project reports, technical documentation, and progress updates utilizing advanced <strong>Microsoft Excel</strong>.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check bullet-icon"></i>
+                  <span><strong>Stakeholder Facilitation:</strong> Coordinated regularly with development team members, business analysts, and key stakeholders to track ongoing project activities and unblock operational bottlenecks.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check bullet-icon"></i>
+                  <span><strong>Ceremonies & MoM:</strong> Actively participated in recurring project governance meetings, documented structured Minutes of Meeting (MoMs), and drove accountability by following up on assigned action items.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check bullet-icon"></i>
+                  <span><strong>Risk & Milestone Tracking:</strong> Supported senior project managers in tracking milestone progress, maintaining risk & issue logs, and updating project health dashboards.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check bullet-icon"></i>
+                  <span><strong>Documentation & Records:</strong> Maintained centralized, audit-compliant project repositories and facilitated seamless, timely communication across cross-functional enterprise teams.</span>
+                </li>
+              </ul>
+
+              <!-- Experience Tool Stack Tags -->
+              <div class="timeline-tags">
+                <span class="tool-pill"><i class="fa-brands fa-jira"></i> Jira</span>
+                <span class="tool-pill"><i class="fa-solid fa-check-double"></i> ClickUp</span>
+                <span class="tool-pill"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+                <span class="tool-pill"><i class="fa-solid fa-rotate"></i> Agile / Scrum</span>
+                <span class="tool-pill"><i class="fa-solid fa-file-lines"></i> Minutes of Meeting (MoM)</span>
+                <span class="tool-pill"><i class="fa-solid fa-triangle-exclamation"></i> Risk Mitigation</span>
+                <span class="tool-pill"><i class="fa-solid fa-users"></i> Stakeholder Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ACADEMIC PROJECTS SECTION -->
+    <section class="projects-section section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-diagram-project"></i> Project Showcase</span>
+          <h2 class="section-title">Featured Academic <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Demonstrating dual capability as a Project Manager and Full Stack Developer across all project lifecycles.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-group" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (4)</button>
+          <button class="filter-btn" data-filter="management" role="tab" aria-selected="false">Project Management Focus</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack Web & Systems</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Hotel Booking Management System -->
+          <article class="project-card" data-category="management fullstack">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/hotel.jpg" alt="Hotel Booking Management System UI" class="project-img" loading="lazy">
+              <div class="project-image-badge">Active Project</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light project-modal-trigger" data-project="hotel">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Case Study
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-row">
+                <span class="project-role-badge"><i class="fa-solid fa-user-gear"></i> Project Manager / Full Stack Developer</span>
+                <span class="project-date"><i class="fa-regular fa-clock"></i> Oct 2025 – Present</span>
+              </div>
+
+              <h3 class="project-title">Hotel Booking Management System</h3>
+              
+              <p class="project-description">
+                End-to-end hospitality operations portal featuring real-time room availability matrices, guest reservation workflows, revenue metrics, and automated booking confirmations.
+              </p>
+
+              <!-- Tech & PM Tags -->
+              <div class="project-tags">
+                <span class="tag">Agile Scrum</span>
+                <span class="tag">Jira Backlog</span>
+                <span class="tag">Full Stack</span>
+                <span class="tag">Booking Engine</span>
+                <span class="tag">Analytics</span>
+              </div>
+
+              <!-- Card Action Row -->
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline project-modal-trigger" data-project="hotel">
+                  <span>Details & PM Insights</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Vehicle Rental Management System -->
+          <article class="project-card" data-category="management fullstack">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/vehicle.jpg" alt="Vehicle Rental Management System UI" class="project-img" loading="lazy">
+              <div class="project-image-badge completed">Completed</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light project-modal-trigger" data-project="vehicle">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Case Study
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-row">
+                <span class="project-role-badge"><i class="fa-solid fa-user-gear"></i> Project Manager / Full Stack Developer</span>
+                <span class="project-date"><i class="fa-regular fa-clock"></i> Feb 2025 – May 2025</span>
+              </div>
+
+              <h3 class="project-title">Vehicle Rental Management System</h3>
+              
+              <p class="project-description">
+                Comprehensive fleet scheduling and customer reservation system with live vehicle status tracking, dynamic daily rate calculation, maintenance logs, and financial summaries.
+              </p>
+
+              <!-- Tech & PM Tags -->
+              <div class="project-tags">
+                <span class="tag">Sprint Planning</span>
+                <span class="tag">Fleet Logistics</span>
+                <span class="tag">ClickUp</span>
+                <span class="tag">Full Stack</span>
+                <span class="tag">CRUD System</span>
+              </div>
+
+              <!-- Card Action Row -->
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline project-modal-trigger" data-project="vehicle">
+                  <span>Details & PM Insights</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Social Media Platform for Food Enthusiasts -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/foodie.jpg" alt="Food Enthusiasts Social Media Platform UI" class="project-img" loading="lazy">
+              <div class="project-image-badge completed">Completed</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light project-modal-trigger" data-project="foodie">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Case Study
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-row">
+                <span class="project-role-badge"><i class="fa-solid fa-user-gear"></i> Project Manager / Full Stack Developer</span>
+                <span class="project-date"><i class="fa-regular fa-clock"></i> Feb 2025 – May 2025</span>
+              </div>
+
+              <h3 class="project-title">Social Media Platform for Food Enthusiasts</h3>
+              
+              <p class="project-description">
+                Community-driven culinary application allowing users to share gourmet recipes, engage via nested comments and ratings, bookmark favorites, and follow community chefs.
+              </p>
+
+              <!-- Tech & PM Tags -->
+              <div class="project-tags">
+                <span class="tag">User Stories</span>
+                <span class="tag">Social Feed</span>
+                <span class="tag">Recipe Engine</span>
+                <span class="tag">Full Stack Web</span>
+                <span class="tag">UI/UX</span>
+              </div>
+
+              <!-- Card Action Row -->
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline project-modal-trigger" data-project="foodie">
+                  <span>Details & PM Insights</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Cinema Management System -->
+          <article class="project-card" data-category="management fullstack">
+            <div class="project-card-image-wrap">
+              <img src="assets/images/cinema.jpg" alt="Cinema Management System UI" class="project-img" loading="lazy">
+              <div class="project-image-badge completed">Completed</div>
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-light project-modal-trigger" data-project="cinema">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Case Study
+                </button>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <div class="project-meta-row">
+                <span class="project-role-badge"><i class="fa-solid fa-user-gear"></i> Project Manager / Full Stack Developer</span>
+                <span class="project-date"><i class="fa-regular fa-clock"></i> July 2024 – Nov 2024</span>
+              </div>
+
+              <h3 class="project-title">Cinema Management System</h3>
+              
+              <p class="project-description">
+                Interactive box office ticketing system with real-time seat selection map, theater screen scheduling, movie roster administration, and ticket sales reporting.
+              </p>
+
+              <!-- Tech & PM Tags -->
+              <div class="project-tags">
+                <span class="tag">Scope Management</span>
+                <span class="tag">Seat Allocation</span>
+                <span class="tag">Showtime Matrix</span>
+                <span class="tag">Full Stack</span>
+                <span class="tag">Database Design</span>
+              </div>
+
+              <!-- Card Action Row -->
+              <div class="project-card-footer">
+                <button class="btn btn-sm btn-outline project-modal-trigger" data-project="cinema">
+                  <span>Details & PM Insights</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" class="project-icon-link" title="Source Code on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Interactive Agile PM Workbench / Sprint Board Simulator -->
+        <div class="agile-workbench-card">
+          <div class="workbench-header">
+            <div class="workbench-title-group">
+              <span class="workbench-badge"><i class="fa-solid fa-bolt"></i> Live Agile Simulation</span>
+              <h3 class="workbench-title">Project Sprint Kanban & Velocity Tracker</h3>
+              <p class="workbench-subtitle">Interactive demonstration of Dinith's Agile backlog prioritization and sprint governance methodology.</p>
+            </div>
+            <div class="workbench-controls">
+              <div class="sprint-selector">
+                <label for="sprint-project-select"><i class="fa-brands fa-jira"></i> Active Project:</label>
+                <select id="sprint-project-select" class="workbench-select">
+                  <option value="hotel">Hotel Booking Engine (Sprint 4)</option>
+                  <option value="vehicle">Vehicle Rental Fleet (Sprint 6)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="workbench-kpi-bar">
+            <div class="wb-kpi-item">
+              <span class="wb-kpi-label">Sprint Goal</span>
+              <span class="wb-kpi-value" id="wb-sprint-goal">Room Availability Engine & Live Calendar Sync</span>
+            </div>
+            <div class="wb-kpi-item">
+              <span class="wb-kpi-label">Story Points</span>
+              <span class="wb-kpi-value highlight"><span id="wb-burned-pts">36</span> / 42 SP</span>
+            </div>
+            <div class="wb-kpi-item">
+              <span class="wb-kpi-label">Sprint Velocity</span>
+              <span class="wb-kpi-value success" id="wb-velocity">92% (On Schedule)</span>
+            </div>
+            <div class="wb-kpi-item">
+              <span class="wb-kpi-label">Days Left</span>
+              <span class="wb-kpi-value" id="wb-days-left">3 Days</span>
+            </div>
+          </div>
+
+          <!-- Interactive Kanban Board Columns -->
+          <div class="kanban-board-grid">
+            <!-- Col 1: Backlog -->
+            <div class="kanban-column" data-status="backlog">
+              <div class="kanban-col-header">
+                <span class="col-dot backlog-dot"></span>
+                <span class="col-title">Product Backlog</span>
+                <span class="col-count" id="count-backlog">2</span>
+              </div>
+              <div class="kanban-cards-list" id="list-backlog">
+                <div class="kanban-task-card" draggable="true" data-id="task-1" data-pts="5">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-104</span>
+                      <span class="task-pts">5 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">Payment gateway webhook reconciliation</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-med">Medium</span>
+                    <span class="task-assignee">FullStack</span>
+                  </div>
+                </div>
+                <div class="kanban-task-card" draggable="true" data-id="task-2" data-pts="3">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-105</span>
+                      <span class="task-pts">3 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">Automated booking cancellation invoice flow</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-low">Low</span>
+                    <span class="task-assignee">Backend</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Col 2: In Progress -->
+            <div class="kanban-column" data-status="progress">
+              <div class="kanban-col-header">
+                <span class="col-dot progress-dot"></span>
+                <span class="col-title">In Progress</span>
+                <span class="col-count" id="count-progress">2</span>
+              </div>
+              <div class="kanban-cards-list" id="list-progress">
+                <div class="kanban-task-card" draggable="true" data-id="task-3" data-pts="8">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-102</span>
+                      <span class="task-pts">8 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">Real-time room availability matrix grid</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-high">High</span>
+                    <span class="task-assignee">Dinith / Dev</span>
+                  </div>
+                </div>
+                <div class="kanban-task-card" draggable="true" data-id="task-4" data-pts="5">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-103</span>
+                      <span class="task-pts">5 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">Reservation conflict lock mechanism</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-high">High</span>
+                    <span class="task-assignee">Database</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Col 3: Review / QA -->
+            <div class="kanban-column" data-status="review">
+              <div class="kanban-col-header">
+                <span class="col-dot review-dot"></span>
+                <span class="col-title">In Review & QA</span>
+                <span class="col-count" id="count-review">1</span>
+              </div>
+              <div class="kanban-cards-list" id="list-review">
+                <div class="kanban-task-card" draggable="true" data-id="task-5" data-pts="5">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-101</span>
+                      <span class="task-pts">5 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">Guest multi-step checkout form validation</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-med">Medium</span>
+                    <span class="task-assignee">QA Squad</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Col 4: Done -->
+            <div class="kanban-column" data-status="done">
+              <div class="kanban-col-header">
+                <span class="col-dot done-dot"></span>
+                <span class="col-title">Done & Verified</span>
+                <span class="col-count" id="count-done">3</span>
+              </div>
+              <div class="kanban-cards-list" id="list-done">
+                <div class="kanban-task-card" draggable="true" data-id="task-6" data-pts="5">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-098</span>
+                      <span class="task-pts">5 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">User authentication & role authorization</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-high">High</span>
+                    <span class="task-assignee">Complete</span>
+                  </div>
+                </div>
+                <div class="kanban-task-card" draggable="true" data-id="task-7" data-pts="8">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-099</span>
+                      <span class="task-pts">8 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">Jira sprint workflow and team backlog setup</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-high">High</span>
+                    <span class="task-assignee">Dinith (PM)</span>
+                  </div>
+                </div>
+                <div class="kanban-task-card" draggable="true" data-id="task-8" data-pts="5">
+                  <div class="task-top">
+                    <div class="task-key-group">
+                      <span class="task-key">HOTEL-100</span>
+                      <span class="task-pts">5 SP</span>
+                    </div>
+                    <div class="task-col-shifts">
+                      <button type="button" class="btn-shift-col btn-shift-prev" title="Move task left" aria-label="Move left"><i class="fa-solid fa-chevron-left"></i></button>
+                      <button type="button" class="btn-shift-col btn-shift-next" title="Move task right" aria-label="Move right"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                  </div>
+                  <h5 class="task-title">Relational database schema for room suites</h5>
+                  <div class="task-bottom">
+                    <span class="task-priority priority-med">Medium</span>
+                    <span class="task-assignee">Complete</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="workbench-footer-note">
+            <i class="fa-solid fa-lightbulb"></i> <span><strong>Interactive Simulation:</strong> Drag and drop any card between columns or click arrows to simulate live sprint velocity progression!</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SKILLS MATRIX SECTION (MODERN INTERACTIVE BENTO GRID) -->
+    <section class="skills-section section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-sliders"></i> Core Competencies</span>
+          <h2 class="section-title">Core Skills & <span class="gradient-text">Tool Proficiency</span></h2>
+          <p class="section-subtitle">A balanced fusion of industry-standard Agile project management tools, cross-functional leadership, and rigorous IT engineering foundations.</p>
+        </div>
+
+        <!-- Sleek Segmented Glass Filter Capsule -->
+        <div class="skills-filter-wrapper">
+          <div class="skills-quick-filters" role="tablist" aria-label="Skills Category Filter">
+            <button class="quick-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              <i class="fa-solid fa-layer-group"></i> <span>All Competencies</span>
+            </button>
+            <button class="quick-filter-btn" data-filter="tools" role="tab" aria-selected="false">
+              <i class="fa-solid fa-toolbox"></i> <span>PM Tools</span>
+            </button>
+            <button class="quick-filter-btn" data-filter="pm" role="tab" aria-selected="false">
+              <i class="fa-solid fa-diagram-project"></i> <span>Methodologies</span>
+            </button>
+            <button class="quick-filter-btn" data-filter="soft" role="tab" aria-selected="false">
+              <i class="fa-solid fa-users-gear"></i> <span>Leadership</span>
+            </button>
+            <button class="quick-filter-btn" data-filter="tech" role="tab" aria-selected="false">
+              <i class="fa-solid fa-laptop-code"></i> <span>Technical IT</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Modern Asymmetric Bento Grid -->
+        <div class="skills-bento-grid" id="skills-matrix-grid">
+
+          <!-- Bento Card 1 (Hero Large): PM Software Powerhouse -->
+          <div class="bento-card bento-hero bento-tools" data-category="tools">
+            <div class="bento-glow-orb bento-glow-teal" aria-hidden="true"></div>
+            <div class="bento-header">
+              <div class="bento-header-left">
+                <div class="bento-icon-badge tools-icon">
+                  <i class="fa-solid fa-toolbox"></i>
+                </div>
+                <div>
+                  <div class="bento-badge-tag">Primary Workflow</div>
+                  <h3 class="bento-title">PM Software & Tracking Stack</h3>
+                </div>
+              </div>
+              <span class="bento-metric-pill">Daily Delivery</span>
+            </div>
+
+            <div class="bento-tools-stream">
+              <!-- Jira Tool Card -->
+              <div class="tool-stream-row">
+                <div class="tool-row-top">
+                  <div class="tool-brand-group">
+                    <span class="tool-logo-box jira-brand-box"><i class="fa-brands fa-jira"></i></span>
+                    <div>
+                      <strong class="tool-brand-name">Atlassian Jira</strong>
+                      <span class="tool-context">Sprint backlogs & burndowns</span>
+                    </div>
+                  </div>
+                  <span class="tool-score-badge">Proficient • 92%</span>
+                </div>
+                <div class="tool-bar-track">
+                  <div class="tool-bar-fill jira-fill" style="width: 92%;"></div>
+                </div>
+                <div class="tool-chips-cloud">
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Sprint Backlogs</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Story Points</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Burndown Charts</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Kanban Boards</span>
+                </div>
+              </div>
+
+              <!-- ClickUp Tool Card -->
+              <div class="tool-stream-row">
+                <div class="tool-row-top">
+                  <div class="tool-brand-group">
+                    <span class="tool-logo-box clickup-brand-box"><i class="fa-solid fa-check-double"></i></span>
+                    <div>
+                      <strong class="tool-brand-name">ClickUp</strong>
+                      <span class="tool-context">Task dependencies & timelines</span>
+                    </div>
+                  </div>
+                  <span class="tool-score-badge">Proficient • 90%</span>
+                </div>
+                <div class="tool-bar-track">
+                  <div class="tool-bar-fill clickup-fill" style="width: 90%;"></div>
+                </div>
+                <div class="tool-chips-cloud">
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Gantt Timelines</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Milestone Tracking</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Squad Velocity</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Dashboards</span>
+                </div>
+              </div>
+
+              <!-- Microsoft Excel Tool Card -->
+              <div class="tool-stream-row">
+                <div class="tool-row-top">
+                  <div class="tool-brand-group">
+                    <span class="tool-logo-box excel-brand-box"><i class="fa-solid fa-file-excel"></i></span>
+                    <div>
+                      <strong class="tool-brand-name">Microsoft Excel</strong>
+                      <span class="tool-context">Progress reporting & KPI data</span>
+                    </div>
+                  </div>
+                  <span class="tool-score-badge">Advanced • 88%</span>
+                </div>
+                <div class="tool-bar-track">
+                  <div class="tool-bar-fill excel-fill" style="width: 88%;"></div>
+                </div>
+                <div class="tool-chips-cloud">
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Pivot Tables</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Formulas (XLOOKUP)</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Progress Reports</span>
+                  <span class="tool-chip"><i class="fa-solid fa-check"></i> Metric Tracking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 2: Agile Methodologies & Ceremonies -->
+          <div class="bento-card bento-pm" data-category="pm">
+            <div class="bento-glow-orb bento-glow-amber" aria-hidden="true"></div>
+            <div class="bento-header">
+              <div class="bento-header-left">
+                <div class="bento-icon-badge pm-icon">
+                  <i class="fa-solid fa-diagram-project"></i>
+                </div>
+                <div>
+                  <div class="bento-badge-tag">Scrum & Delivery</div>
+                  <h3 class="bento-title">Agile Methodologies</h3>
+                </div>
+              </div>
+              <span class="bento-metric-pill">4 Disciplines</span>
+            </div>
+
+            <!-- Visual Ceremony Cycle Flow -->
+            <div class="bento-ceremonies-flow">
+              <div class="flow-pill-card">
+                <div class="flow-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="flow-info">
+                  <strong>Project Planning & WBS</strong>
+                  <span>Sprint milestones & critical path tracking</span>
+                </div>
+              </div>
+
+              <div class="flow-pill-card">
+                <div class="flow-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                <div class="flow-info">
+                  <strong>Project Coordination</strong>
+                  <span>Daily stand-ups, squad sync & blocker removal</span>
+                </div>
+              </div>
+
+              <div class="flow-pill-card">
+                <div class="flow-icon"><i class="fa-solid fa-comments-dollar"></i></div>
+                <div class="flow-info">
+                  <strong>Stakeholder Communication</strong>
+                  <span>Status decks, alignment & scope change control</span>
+                </div>
+              </div>
+
+              <div class="flow-pill-card">
+                <div class="flow-icon"><i class="fa-solid fa-file-shield"></i></div>
+                <div class="flow-info">
+                  <strong>Documentation & QA</strong>
+                  <span>MoMs, project charters & risk registers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 3: Soft Skills & Leadership -->
+          <div class="bento-card bento-soft" data-category="soft">
+            <div class="bento-glow-orb bento-glow-rose" aria-hidden="true"></div>
+            <div class="bento-header">
+              <div class="bento-header-left">
+                <div class="bento-icon-badge soft-icon">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div>
+                  <div class="bento-badge-tag">Interpersonal Mindset</div>
+                  <h3 class="bento-title">Leadership & Soft Skills</h3>
+                </div>
+              </div>
+              <span class="bento-metric-pill">Core Traits</span>
+            </div>
+
+            <div class="bento-quad-grid">
+              <div class="quad-item">
+                <div class="quad-icon-wrap"><i class="fa-solid fa-comments"></i></div>
+                <strong class="quad-title">Clear Communication</strong>
+                <span class="quad-caption">Fluent verbal & written stakeholder coordination</span>
+              </div>
+
+              <div class="quad-item">
+                <div class="quad-icon-wrap"><i class="fa-solid fa-sitemap"></i></div>
+                <strong class="quad-title">Organizational Rigor</strong>
+                <span class="quad-caption">Structured filing, meeting minutes & timeline follow-ups</span>
+              </div>
+
+              <div class="quad-item">
+                <div class="quad-icon-wrap"><i class="fa-solid fa-flag"></i></div>
+                <strong class="quad-title">Initiative & Ownership</strong>
+                <span class="quad-caption">Cross-functional team accountability & empathy</span>
+              </div>
+
+              <div class="quad-item">
+                <div class="quad-icon-wrap"><i class="fa-solid fa-lightbulb"></i></div>
+                <strong class="quad-title">Problem Solving</strong>
+                <span class="quad-caption">Root cause analysis & pragmatic mitigation paths</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 4: Technical IT Foundation -->
+          <div class="bento-card bento-tech" data-category="tech">
+            <div class="bento-glow-orb bento-glow-blue" aria-hidden="true"></div>
+            <div class="bento-header">
+              <div class="bento-header-left">
+                <div class="bento-icon-badge tech-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                  <div class="bento-badge-tag">IT Degree Fluency</div>
+                  <h3 class="bento-title">Technical Foundation</h3>
+                </div>
+              </div>
+              <span class="bento-metric-pill">SLIIT B.Sc. IT</span>
+            </div>
+
+            <p class="bento-subtext">Direct IT background providing deep technical literacy across software architectures, databases, and APIs:</p>
+
+            <div class="bento-tech-tags">
+              <div class="bento-tech-badge">
+                <i class="fa-brands fa-html5"></i>
+                <div>
+                  <strong>HTML5 / CSS3</strong>
+                  <span>UI & Layouts</span>
+                </div>
+              </div>
+
+              <div class="bento-tech-badge">
+                <i class="fa-brands fa-js"></i>
+                <div>
+                  <strong>JavaScript (ES6+)</strong>
+                  <span>Client Logic</span>
+                </div>
+              </div>
+
+              <div class="bento-tech-badge">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                  <strong>SQL & Relational DBs</strong>
+                  <span>Schemas & ERDs</span>
+                </div>
+              </div>
+
+              <div class="bento-tech-badge">
+                <i class="fa-solid fa-network-wired"></i>
+                <div>
+                  <strong>RESTful APIs</strong>
+                  <span>HTTP & JSON</span>
+                </div>
+              </div>
+
+              <div class="bento-tech-badge">
+                <i class="fa-brands fa-git-alt"></i>
+                <div>
+                  <strong>Git Version Control</strong>
+                  <span>Branches & PRs</span>
+                </div>
+              </div>
+
+              <div class="bento-tech-badge">
+                <i class="fa-solid fa-server"></i>
+                <div>
+                  <strong>SDLC & Architecture</strong>
+                  <span>Agile vs Waterfall</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Executive Competency Highlights Ribbon -->
+        <div class="skills-highlight-ribbon">
+          <div class="ribbon-item">
+            <div class="ribbon-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="ribbon-text">
+              <strong>6+ Months Industry PM</strong>
+              <span>Sri Lanka Insurance Corporation</span>
+            </div>
+          </div>
+          <div class="ribbon-divider"></div>
+          <div class="ribbon-item">
+            <div class="ribbon-icon"><i class="fa-solid fa-repeat"></i></div>
+            <div class="ribbon-text">
+              <strong>Agile & Scrum Delivery</strong>
+              <span>Sprint planning & burndowns</span>
+            </div>
+          </div>
+          <div class="ribbon-divider"></div>
+          <div class="ribbon-item">
+            <div class="ribbon-icon"><i class="fa-solid fa-sliders"></i></div>
+            <div class="ribbon-text">
+              <strong>Jira & ClickUp Power User</strong>
+              <span>End-to-end task tracking</span>
+            </div>
+          </div>
+          <div class="ribbon-divider"></div>
+          <div class="ribbon-item">
+            <div class="ribbon-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="ribbon-text">
+              <strong>Final-Year B.Sc. IT</strong>
+              <span>SLIIT Undergraduate</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. EDUCATION SECTION -->
+    <section class="education-section section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Qualifications</span></h2>
+          <p class="section-subtitle">Academic foundations in Information Technology and analytical secondary education.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Higher Education: SLIIT -->
+          <div class="education-card primary-edu">
+            <div class="edu-icon-badge">
+              <i class="fa-solid fa-university"></i>
+            </div>
+            <div class="edu-content">
+              <div class="edu-meta">
+                <span class="edu-tag current">Final-Year Undergraduate</span>
+                <span class="edu-dates"><i class="fa-regular fa-calendar"></i> Sep 2022 – Present</span>
+              </div>
+              <h3 class="edu-degree">BSc (Hons) in Information Technology</h3>
+              <div class="edu-specialization">Specializing in Information Technology</div>
+              <h4 class="edu-institution">
+                <i class="fa-solid fa-location-dot"></i> Sri Lanka Institute of Information Technology (SLIIT)
+              </h4>
+              <p class="edu-description">
+                Comprehensive four-year curriculum focused on enterprise software development, system architecture, database design, project management frameworks, and information systems engineering.
+              </p>
+              <div class="edu-highlights">
+                <span class="highlight-pill"><i class="fa-solid fa-check"></i> Software Engineering & SDLC</span>
+                <span class="highlight-pill"><i class="fa-solid fa-check"></i> IT Project Management</span>
+                <span class="highlight-pill"><i class="fa-solid fa-check"></i> Database Management Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Education: H/Debarawewa Central College -->
+          <div class="education-card">
+            <div class="edu-icon-badge secondary-badge">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="edu-content">
+              <div class="edu-meta">
+                <span class="edu-tag completed">Completed</span>
+                <span class="edu-dates"><i class="fa-regular fa-calendar"></i> 2017 – 2021</span>
+              </div>
+              <h3 class="edu-degree">G.C.E. Advanced Level & Ordinary Level</h3>
+              <div class="edu-specialization">Physical Science / IT Foundation</div>
+              <h4 class="edu-institution">
+                <i class="fa-solid fa-location-dot"></i> H/Debarawewa Central College
+              </h4>
+              <p class="edu-description">
+                Completed secondary education with strong foundations in analytical reasoning, mathematics, and science, fostering disciplined organizational discipline and problem-solving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CERTIFICATIONS SECTION -->
+    <section class="certifications-section section" id="certifications">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-award"></i> Professional Validation</span>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Credentials</span></h2>
+          <p class="section-subtitle">Formal professional certifications validating industry methodologies.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Agile & Scrum Certification Card -->
+          <div class="cert-card">
+            <div class="cert-glow"></div>
+            <div class="cert-header">
+              <div class="cert-badge-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="cert-status">
+                <span class="status-verified"><i class="fa-solid fa-circle-check"></i> Verified Credential</span>
+              </div>
+            </div>
+
+            <div class="cert-body">
+              <h3 class="cert-title">Professional Certificate in Agile and Scrum</h3>
+              <div class="cert-issuer">
+                <i class="fa-solid fa-ribbon"></i> Agile & Scrum Professional Body
+              </div>
+              <p class="cert-summary">
+                Rigorous training covering Scrum roles (Product Owner, Scrum Master, Developers), Agile artifacts (Sprint Backlog, Product Backlog, Increment), ceremonies (Daily Scrum, Sprint Planning, Review, Retrospective), and burn-down metrics.
+              </p>
+
+              <div class="cert-competencies">
+                <span class="comp-chip">Sprint Planning</span>
+                <span class="comp-chip">Daily Standups</span>
+                <span class="comp-chip">Backlog Refinement</span>
+                <span class="comp-chip">Sprint Retrospectives</span>
+                <span class="comp-chip">Scrum Governance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrum Ceremonies Framework Breakdown -->
+        <div class="ceremonies-mastery-card">
+          <div class="ceremonies-head">
+            <span class="ceremonies-badge"><i class="fa-solid fa-arrows-spin"></i> Agile Governance Framework</span>
+            <h3 class="ceremonies-title">Scrum Ceremonies Mastered & Facilitated</h3>
+            <p class="ceremonies-subtitle">Structured execution framework Dinith applies across sprint lifecycles to ensure transparency, velocity, and delivery quality.</p>
+          </div>
+          <div class="ceremonies-grid">
+            <div class="ceremony-item">
+              <div class="ceremony-icon"><i class="fa-solid fa-compass"></i></div>
+              <div class="ceremony-phase">Phase 01</div>
+              <h4 class="ceremony-name">Sprint Planning</h4>
+              <p class="ceremony-desc">Decomposes requirements into user stories, estimates story points, establishes realistic sprint goals, and balances squad capacity.</p>
+              <span class="ceremony-tag"><i class="fa-solid fa-check"></i> Output: Sprint Backlog & Goal</span>
+            </div>
+
+            <div class="ceremony-item">
+              <div class="ceremony-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="ceremony-phase">Phase 02</div>
+              <h4 class="ceremony-name">Daily Stand-up</h4>
+              <p class="ceremony-desc">Strict 15-minute sync addressing: what was done yesterday, what is planned today, and immediate unblocking of operational obstacles.</p>
+              <span class="ceremony-tag"><i class="fa-solid fa-check"></i> Output: Daily Burndown Alignment</span>
+            </div>
+
+            <div class="ceremony-item">
+              <div class="ceremony-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="ceremony-phase">Phase 03</div>
+              <h4 class="ceremony-name">Sprint Review & Demo</h4>
+              <p class="ceremony-desc">Facilitates live working software demos to product owners and key stakeholders, capturing immediate feedback and acceptance criteria sign-offs.</p>
+              <span class="ceremony-tag"><i class="fa-solid fa-check"></i> Output: Increment Acceptance</span>
+            </div>
+
+            <div class="ceremony-item">
+              <div class="ceremony-icon"><i class="fa-solid fa-rotate-left"></i></div>
+              <div class="ceremony-phase">Phase 04</div>
+              <h4 class="ceremony-name">Sprint Retrospective</h4>
+              <p class="ceremony-desc">Drives continuous improvement using Start/Stop/Continue methodologies to identify friction points and optimize velocity for upcoming sprints.</p>
+              <span class="ceremony-tag"><i class="fa-solid fa-check"></i> Output: Actionable Process Tweaks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. REFERENCES SECTION (Privacy-Conscious) -->
+    <section class="references-section section" id="references">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-user-check"></i> Professional Endorsements</span>
+          <h2 class="section-title">Professional <span class="gradient-text">References</span></h2>
+          <p class="section-subtitle">Senior leadership supervisors from Sri Lanka Insurance Corporation (Life).</p>
+        </div>
+
+        <!-- Privacy Assurance Note -->
+        <div class="reference-privacy-banner">
+          <div class="privacy-banner-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="privacy-banner-text">
+            <strong>Privacy Protection Notice:</strong> In compliance with corporate privacy best practices, direct personal contact details (phone and email) of references are kept confidential on this public page. They will gladly be provided to verified recruiters and hiring managers upon request.
+          </div>
+        </div>
+
+        <div class="references-grid">
+          <!-- Reference 1: Shanika Senevirathne -->
+          <div class="reference-card">
+            <div class="ref-avatar">
+              <span class="ref-initials">SS</span>
+            </div>
+            <div class="ref-details">
+              <h3 class="ref-name">Shanika Senevirathne</h3>
+              <div class="ref-title">Associate Project Manager</div>
+              <div class="ref-company">
+                <i class="fa-solid fa-building-shield"></i> Sri Lanka Insurance Corporation
+              </div>
+              <p class="ref-relationship">Direct Internship Supervisor & Agile Mentor</p>
+              
+              <div class="ref-action-row">
+                <button class="btn btn-sm btn-outline request-ref-trigger" data-ref-name="Shanika Senevirathne, Associate Project Manager">
+                  <i class="fa-solid fa-envelope-open-text"></i> Request Reference Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reference 2: Mindika Thennakon -->
+          <div class="reference-card">
+            <div class="ref-avatar">
+              <span class="ref-initials">MT</span>
+            </div>
+            <div class="ref-details">
+              <h3 class="ref-name">Mindika Thennakon</h3>
+              <div class="ref-title">Manager PMO & IT Strategy</div>
+              <div class="ref-company">
+                <i class="fa-solid fa-building-shield"></i> Sri Lanka Insurance Corporation
+              </div>
+              <p class="ref-relationship">Head of PMO & Strategic IT Governance</p>
+
+              <div class="ref-action-row">
+                <button class="btn btn-sm btn-outline request-ref-trigger" data-ref-name="Mindika Thennakon, Manager PMO & IT Strategy">
+                  <i class="fa-solid fa-envelope-open-text"></i> Request Reference Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT SECTION -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-regular fa-paper-plane"></i> Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Interested in discussing a Project Management opportunity, internship, or technical collaboration?</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Quick Channels -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Let's Discuss Opportunities</h3>
+            <p class="contact-panel-text">
+              I am actively seeking Project Management Associate / Trainee / Junior PM roles in forward-thinking IT organizations where I can drive project velocity and stakeholder value.
+            </p>
+
+            <div class="contact-channels">
+              <!-- Channel: Email -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="channel-label">Email Address</span>
+                  <a href="mailto:dinithnavodya12@gmail.com" class="channel-value">dinithnavodya12@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="dinithnavodya12@gmail.com" title="Copy email address" aria-label="Copy email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Channel: Phone -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="channel-label">Phone / WhatsApp</span>
+                  <a href="tel:+94711609534" class="channel-value">+94 71 160 9534</a>
+                </div>
+                <button class="copy-btn" data-copy="+94711609534" title="Copy phone number" aria-label="Copy phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Channel: LinkedIn -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="channel-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/dinith-navo/" target="_blank" rel="noopener noreferrer" class="channel-value">linkedin.com/in/dinith-navo</a>
+                </div>
+                <a href="https://www.linkedin.com/in/dinith-navo/" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open LinkedIn" aria-label="Open LinkedIn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <!-- Channel: GitHub -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="channel-label">GitHub Profile</span>
+                  <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" class="channel-value">github.com/Dinith-Navo</a>
+                </div>
+                <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open GitHub" aria-label="Open GitHub">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Download CV Quick Banner -->
+            <div class="cv-quick-card">
+              <div class="cv-card-text">
+                <strong>Official Resume (PDF)</strong>
+                <span>Direct PDF download or interactive preview.</span>
+              </div>
+              <div class="cv-quick-actions" style="display: flex; gap: 8px; align-items: center;">
+                <a href="assets/resume.pdf" download="Dinith_Navodya_Resume.pdf" class="btn btn-sm btn-primary" title="Download Dinith Navodya Resume PDF">
+                  <i class="fa-solid fa-file-arrow-down"></i> Download PDF
+                </a>
+                <button id="contact-view-cv-btn" class="btn btn-sm btn-outline">
+                  <i class="fa-regular fa-eye"></i> Preview
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill out the fields below and I'll respond within 24 hours.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" placeholder="e.g. Johnathan Smith" required>
+                  </div>
+                  <span class="error-text" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" placeholder="e.g. john@company.com" required>
+                  </div>
+                  <span class="error-text" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-bookmark input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" placeholder="e.g. Project Manager Opportunity / Interview" required>
+                </div>
+                <span class="error-text" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <div class="label-with-counter">
+                  <label for="contact-message">Your Message <span class="required">*</span></label>
+                  <span class="char-count"><span id="char-current">0</span>/500</span>
+                </div>
+                <div class="input-wrap textarea-wrap">
+                  <textarea id="contact-message" name="message" rows="5" maxlength="500" placeholder="Hello Dinith, we reviewed your portfolio and would like to discuss..." required></textarea>
+                </div>
+                <span class="error-text" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
+              </button>
+
+              <div class="form-privacy-note">
+                <i class="fa-solid fa-lock"></i> Your information is safely kept strictly for communication purposes.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo" aria-label="DN">
+            <span class="logo-badge">DN</span>
+          </a>
+          <p class="footer-bio">
+            Intern Project Manager at Sri Lanka Insurance Corporation (Life). Dedicated to Agile excellence, transparent team leadership, and quality software delivery.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-summary">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <p><i class="fa-solid fa-envelope"></i> dinithnavodya12@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +94 71 160 9534</p>
+          <p><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</p>
+
+          <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/dinith-navo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Dinith-Navo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:dinithnavodya12@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+94711609534" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Dinith Navodya. All rights reserved. Crafted with precision for high-impact project management.
+        </p>
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <i class="fa-solid fa-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE MODALS ==================== -->
+
+  <!-- 1. PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-dialog modal-lg">
+      <button class="modal-close-btn" id="close-project-modal" aria-label="Close dialog">&times;</button>
+      <div class="modal-body" id="project-modal-content">
+        <!-- Dynamic content injected by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. REFERENCES REQUEST MODAL -->
+  <div class="modal-backdrop" id="reference-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-ref-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="close-ref-modal" aria-label="Close dialog">&times;</button>
+      <div class="modal-body">
+        <div class="ref-modal-header">
+          <div class="ref-modal-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 id="modal-ref-title">Official Referee Contact Details</h3>
+        </div>
+        <p class="ref-modal-desc">
+          Supervisory project management references from <strong>Sri Lanka Insurance Corporation (Life)</strong>.
+        </p>
+
+        <!-- Direct Instant Contact Details for Hiring Managers -->
+        <div class="ref-direct-access-card">
+          <div class="ref-reveal-banner">
+            <i class="fa-solid fa-building-shield"></i>
+            <div>
+              <strong>Instant Contact for Recruiters & Hiring Managers:</strong>
+              <p>Direct credentials from Dinith's official resume document.</p>
+            </div>
+          </div>
+
+          <div class="ref-contacts-list">
+            <!-- Referee 1: Shanika Senevirathne -->
+            <div class="ref-contact-box">
+              <div class="ref-contact-head">
+                <span class="ref-contact-avatar">SS</span>
+                <div>
+                  <h4 class="ref-contact-name">Shanika Senevirathne</h4>
+                  <span class="ref-contact-role">Associate Project Manager — Sri Lanka Insurance</span>
+                </div>
+              </div>
+              <div class="ref-contact-methods">
+                <a href="tel:+94712593516" class="ref-method-btn" title="Call Shanika Senevirathne">
+                  <i class="fa-solid fa-phone"></i> +94 71 259 3516
+                </a>
+                <button type="button" class="ref-copy-btn" data-copy="+94712593516" title="Copy Phone Number" aria-label="Copy phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <a href="mailto:lasanthishanika97@gmail.com" class="ref-method-btn" title="Email Shanika Senevirathne">
+                  <i class="fa-solid fa-envelope"></i> lasanthishanika97@gmail.com
+                </a>
+                <button type="button" class="ref-copy-btn" data-copy="lasanthishanika97@gmail.com" title="Copy Email" aria-label="Copy email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Referee 2: Mindika Thennakon -->
+            <div class="ref-contact-box">
+              <div class="ref-contact-head">
+                <span class="ref-contact-avatar">MT</span>
+                <div>
+                  <h4 class="ref-contact-name">Mindika Thennakon</h4>
+                  <span class="ref-contact-role">Manager PMO & IT Strategy — Sri Lanka Insurance</span>
+                </div>
+              </div>
+              <div class="ref-contact-methods">
+                <a href="tel:+94773441730" class="ref-method-btn" title="Call Mindika Thennakon">
+                  <i class="fa-solid fa-phone"></i> +94 77 344 1730
+                </a>
+                <button type="button" class="ref-copy-btn" data-copy="+94773441730" title="Copy Phone Number" aria-label="Copy phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <a href="mailto:mindikat@sliclife.com" class="ref-method-btn" title="Email Mindika Thennakon">
+                  <i class="fa-solid fa-envelope"></i> mindikat@sliclife.com
+                </a>
+                <button type="button" class="ref-copy-btn" data-copy="mindikat@sliclife.com" title="Copy Email" aria-label="Copy email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ref-request-box">
+          <p class="ref-email-preview">Or send a pre-formatted inquiry email directly to Dinith Navodya:</p>
+          <a href="#" id="ref-mailto-link" class="btn btn-outline btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Email Dinith Directly
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. RESUME / CV PREVIEW & PRINT MODAL -->
+  <div class="modal-backdrop" id="cv-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-cv-title">
+    <div class="modal-dialog modal-cv-dialog">
+      <div class="modal-header-cv">
+        <div class="cv-header-title-box">
+          <h3 id="modal-cv-title"><i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i> Dinith Navodya — Resume</h3>
+          <div class="cv-view-tabs" role="tablist">
+            <button class="cv-tab-btn active" id="tab-pdf-btn" role="tab" aria-selected="true"><i class="fa-solid fa-file-pdf"></i> Official PDF</button>
+            <button class="cv-tab-btn" id="tab-sheet-btn" role="tab" aria-selected="false"><i class="fa-solid fa-file-lines"></i> Printable Sheet</button>
+          </div>
+        </div>
+        <div class="cv-actions">
+          <a href="assets/resume.pdf" download="Dinith_Navodya_Resume.pdf" class="btn btn-sm btn-primary" title="Download Official Resume PDF">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" title="Open PDF in new tab">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open
+          </a>
+          <button id="cv-print-btn" class="btn btn-sm btn-secondary" title="Print resume">
+            <i class="fa-solid fa-print"></i>
+          </button>
+          <button class="modal-close-btn" id="close-cv-modal" aria-label="Close dialog">&times;</button>
+        </div>
+      </div>
+      <!-- Embedded Official PDF Viewer -->
+      <div class="modal-body cv-pdf-wrapper" id="cv-pdf-container">
+        <iframe src="assets/resume.pdf#toolbar=1" class="cv-pdf-iframe" title="Dinith Navodya Official Resume PDF"></iframe>
+      </div>
+      <div class="modal-body cv-printable-sheet" id="cv-printable-content" style="display: none;">
+        <!-- Formatted Printable Resume -->
+        <header class="cv-sheet-header">
+          <div>
+            <h1 class="cv-sheet-name">Dinith Navodya</h1>
+            <div class="cv-sheet-title">Intern Project Manager | Final-Year IT Undergraduate</div>
+          </div>
+          <div class="cv-sheet-contact">
+            <div><i class="fa-solid fa-phone"></i> +94 71 160 9534</div>
+            <div><i class="fa-solid fa-envelope"></i> dinithnavodya12@gmail.com</div>
+            <div><i class="fa-brands fa-linkedin"></i> linkedin.com/in/dinith-navo</div>
+            <div><i class="fa-brands fa-github"></i> github.com/Dinith-Navo</div>
+            <div><i class="fa-solid fa-location-dot"></i> Colombo, Sri Lanka</div>
+          </div>
+        </header>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Professional Summary</h2>
+          <p>
+            Motivated and detail-oriented final-year undergraduate with 6 months of experience as a Project Management Intern in the IT industry. Experienced in supporting project planning, coordinating cross-functional teams, tracking project progress, and facilitating stakeholder communication in Agile environments. Proficient in project management tools such as Jira, ClickUp, and Microsoft Excel. A quick learner with strong organizational, analytical, and problem-solving skills, seeking to contribute to successful project delivery while growing as a project management professional.
+          </p>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Work Experience</h2>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>Intern Project Manager</strong> — Sri Lanka Insurance Corporation (Life)
+              <span class="cv-date">March 2026 – Present</span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Assisted in project planning, coordination, and monitoring to support successful project delivery.</li>
+              <li>Managed project tasks, timelines, and updates using ClickUp and Jira.</li>
+              <li>Prepared project reports, documentation, and progress updates using Microsoft Excel.</li>
+              <li>Coordinated with team members and stakeholders to track project activities and resolve issues.</li>
+              <li>Participated in project meetings, recorded meeting minutes, and followed up on assigned tasks.</li>
+              <li>Supported project managers in tracking milestones, risks, and project status.</li>
+              <li>Maintained accurate project records and ensured timely communication across teams.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Academic Projects</h2>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>Hotel Booking Management System</strong> (Role: Project Manager / Full Stack Developer)
+              <span class="cv-date">Oct 2025 – Present</span>
+            </div>
+            <p>Agile-driven hotel room reservation and availability portal with analytics, customer booking flow, and sprint backlog tracking.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>Vehicle Rental Management System</strong> (Role: Project Manager / Full Stack Developer)
+              <span class="cv-date">Feb 2025 – May 2025</span>
+            </div>
+            <p>End-to-end fleet tracking and vehicle rental scheduling system with dynamic pricing and maintenance logs.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>Social Media Platform for Food Enthusiasts</strong> (Role: Project Manager / Full Stack Developer)
+              <span class="cv-date">Feb 2025 – May 2025</span>
+            </div>
+            <p>Culinary community social web application with recipe sharing, nested feedback, and user interaction metrics.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>Cinema Management System</strong> (Role: Project Manager / Full Stack Developer)
+              <span class="cv-date">July 2024 – Nov 2024</span>
+            </div>
+            <p>Movie showtime administration, interactive theater seating selection map, and automated ticket sales reporting.</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Education</h2>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>BSc (Hons) in Information Technology</strong> — Sri Lanka Institute of Information Technology (SLIIT)
+              <span class="cv-date">Sep 2022 – Present</span>
+            </div>
+            <p>Specializing in Information Technology. Final-year undergraduate.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <strong>G.C.E. Advanced Level & Ordinary Level</strong> — H/Debarawewa Central College
+              <span class="cv-date">2017 – 2021</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Certifications</h2>
+          <div class="cv-entry">
+            <strong>Professional Certificate in Agile and Scrum</strong>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">Skills & Competencies</h2>
+          <div class="cv-skills-summary">
+            <p><strong>Tools:</strong> Jira, ClickUp, Microsoft Excel</p>
+            <p><strong>Project Management:</strong> Project Planning & Scheduling, Project Coordination, Stakeholder Communication, Project Documentation & Reporting</p>
+            <p><strong>Soft Skills:</strong> Communication, Organizational Skills, Leadership, Problem-Solving</p>
+            <p><strong>Languages:</strong> English (Fluent), Sinhala (Fluent)</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-sec-title">References</h2>
+          <p>Available upon request: Shanika Senevirathne (Associate Project Manager, SLIC) & Mindika Thennakon (Manager PMO & IT Strategy, SLIC).</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. COMMAND PALETTE MODAL (Ctrl + K) -->
+  <div class="modal-backdrop cmd-palette-backdrop" id="cmd-palette-modal" aria-hidden="true" role="dialog" aria-labelledby="cmd-palette-title">
+    <div class="modal-dialog cmd-palette-dialog">
+      <div class="cmd-search-header">
+        <i class="fa-solid fa-magnifying-glass cmd-search-icon"></i>
+        <input type="text" id="cmd-search-input" placeholder="Type a command, skill, or jump to section..." autocomplete="off">
+        <span class="cmd-esc-badge"><kbd>ESC</kbd></span>
+      </div>
+      <div class="cmd-results-list" id="cmd-results-list">
+        <!-- Injected dynamically by JS -->
+      </div>
+      <div class="cmd-palette-footer">
+        <span><kbd>↑</kbd> <kbd>↓</kbd> to navigate</span>
+        <span><kbd>↵</kbd> to select</span>
+        <span><kbd>ESC</kbd> to close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION POPUP -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
